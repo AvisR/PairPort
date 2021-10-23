@@ -23,9 +23,7 @@ remove(list = c(env))
 library(parallel)
 library(foreach)
 library(doParallel)
-library(doSNOW)
-library(doRNG)
-library(tictoc)
+
     
 #Packages - Data import and Manipulation
 library(readxl)#To import data set
@@ -44,21 +42,12 @@ library(strucchange) # To Identify Structural Breaks
     
 #Package - Unit Root Test
 library(tseries)
-library(fUnitRoots)
 library(timeSeries)
-library(exuber)
 library(urca)
+library(fUnitRoots) #CorrelationTest
     
 #Package - VAR and VECM Models
 library(vars)
-
-#Package - Cointegrating Relationship
-library(cointReg)
-library(egcm) #engle granger test
-    
-#Package - GARCH Model
-library(rmgarch)
-library(FinTS)
 
 #Package - Performance Evaluation
 library(PerformanceAnalytics)
@@ -67,8 +56,6 @@ library(PerformanceAnalytics)
 library(shiny)
     
 #Package Miscellaneous 
-library(forecast)
-library(ftsa)
 library(tsDyn)
 library(rstudioapi)
     
